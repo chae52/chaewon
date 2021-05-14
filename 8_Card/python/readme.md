@@ -17,3 +17,9 @@ bellshape: standardscaler
 구간 10개로 지정
 - days_employed
 n =500
+
+## ver 4(
+- 차원축소(PCA)
+- 시각화 된 것 보고 scaling 다시 생각해보기
+- days_employed
+현재 n=2,100,500만 해보았는데 더 자세히 뜯어보기
