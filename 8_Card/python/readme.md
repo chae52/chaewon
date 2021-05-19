@@ -25,4 +25,17 @@ n =500
 n=2로 한 열을 아예추가해서 평가해보았으나 차이 없어서 n=500으로 하기로 결정
 
 ## ver 5
-- scaling 한 후 모델성능 차이 확인
+- scaling 한 후 모델성능 차이 확인(이민영님 시각화 참고하여 조금 방법 수정)
+- 결과
+1. scaling:xgboost:no pca : 0.8543297831
+2. scaling:xgboost:pca(family size랑 child num) : 0.8550151303
+3. scaling:xgboost:pca(family size랑 child num, work phone이랑 phone) : 	0.8551579135	
+4. no scaling:xgboost : (제출예정) <br>
+
+-> pca하면 할수록 성능 저하
+※기본 전처리
+DAYS_BIRTH:AGE로 변환
+GENDER, CAR, REALITY, EDU_TYPE,FAMILY_TYPE,HOUSE_TYPE,INCOME_TYPE:라벨인코딩
+INCOME_TOTAL:10개 구간 분할
+DAYS_EMPLOYED,BEGIN_MONTH:구간화
+CHILD_NUM,FAMILY_SIZE:6이상 모두 6으로
