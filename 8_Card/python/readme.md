@@ -18,8 +18,11 @@ bellshape: standardscaler
 - days_employed
 n =500
 
-## ver 4(
+## ver 4
 - 차원축소(PCA)
 - 시각화 된 것 보고 scaling 다시 생각해보기
-- days_employed
-현재 n=2,100,500만 해보았는데 더 자세히 뜯어보기
+- days_employed:n=2,500 성능 차이 확인을 위해서
+n=2로 한 열을 아예추가해서 평가해보았으나 차이 없어서 n=500으로 하기로 결정
+
+## ver 5
+- scaling 한 후 모델성능 차이 확인
