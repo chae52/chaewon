@@ -30,10 +30,11 @@ n=2로 한 열을 아예추가해서 평가해보았으나 차이 없어서 n=50
 1. scaling:xgboost:no pca : 0.8543297831
 2. scaling:xgboost:pca(family size랑 child num) : 0.8550151303
 3. scaling:xgboost:pca(family size랑 child num, work phone이랑 phone) : 	0.8551579135	
-4. no scaling:xgboost : (제출예정) <br>
+4. no scaling:xgboost : 0.8543297831 <br>
 
--> pca하면 할수록 성능 저하<br>
-※기본 전처리<br>
+-> pca하면 할수록 성능 저하<br>,
+scaling해도 성능 
+### ※기본 전처리<br>
 DAYS_BIRTH:AGE로 변환<br>
 GENDER, CAR, REALITY, EDU_TYPE,FAMILY_TYPE,HOUSE_TYPE,INCOME_TYPE:라벨인코딩<br>
 INCOME_TOTAL:10개 구간 분할<br>
